@@ -54,7 +54,7 @@ public class ExceptionMiddleware
 
             }.ToString());
         }
-
+        //error'a loglama ekle. kaç request geliyor. open telemetry 
         return httpContext.Response.WriteAsync(new ErrorDetails
         {
             StatusCode = httpContext.Response.StatusCode,
